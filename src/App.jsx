@@ -15,11 +15,12 @@ function App() {
 
   return (
     <>
-      {/* <Exemplo/> */}
+      
       <Header />
       <Card product={product1} setProduct={setProduct1} />
       <Card product={product2} setProduct={setProduct2} />
-      <Footer total={total} />
+      
+      {total?<Footer total={total} />:<></>}
     </>
   )
 }

@@ -3,7 +3,7 @@ export default function Footer(props) {
         <>
         <footer>
             <p>Total de Itens</p>
-            <p>{props.total} itens</p>
+            <p>{props.total} {props.total === 1? "item": "itens"}</p>
         </footer>
         </>
     )

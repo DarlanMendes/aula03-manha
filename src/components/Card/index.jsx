@@ -21,13 +21,15 @@ const Card = (props) => {
                     }
 
                     }>-</button>
-                    <p>{props.product} items</p>
-                    <button onClick={() => {
-                        handleProduct("+")
-                    }}>+</button>
-                </div>
+                <p>{ props.product ===0? "Adicionar item":( 
+                    props.product ===1?"1 Item":  props.product+" Itens")}</p>
+                <button onClick={() => {
+                    handleProduct("+")
+                }}>+</button>
             </div>
-        </article>
+        </div>
+        </article >
     )
 }
 export default Card
+
